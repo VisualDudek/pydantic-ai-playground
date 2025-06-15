@@ -20,7 +20,7 @@ class MyModel(BaseModel):
     country: str
 
 
-model = os.getenv('PYDANTIC_AI_MODEL', 'openai:gpt-4o')
+model = os.getenv('PYDANTIC_AI_MODEL', 'openai:o4-mini')
 print(f'Using model: {model}')
 agent = Agent(model, output_type=MyModel)
 
